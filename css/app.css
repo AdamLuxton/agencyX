@@ -8134,7 +8134,10 @@ body, html {
   height: 100%; }
 
 body {
-  background: #1c1b1b; }
+  background-color: #135780;
+  background-image: url(../images/home_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 a {
   color: #47C2C6;
@@ -8151,6 +8154,34 @@ a {
 
 .hidden {
   display: none; }
+
+#topSectionRow {
+  background-color: #0a3f59;
+  border-bottom: 2px solid #47C2C6;
+  padding: 6px 0px; }
+
+#topSectionRow h2 {
+  font-family: 'Exo', Arial, Times, Serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #47C2C6;
+  font-size: 1em;
+  text-align: left;
+  margin: 3px 0 0 0;
+  padding: 0; }
+
+#topSectionRow p {
+  font-family: 'Exo', Arial, Times, Serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #47C2C6;
+  font-size: 1em;
+  text-align: right;
+  margin: 0;
+  padding: 0; }
+
+#topSectionRow span {
+  font-weight: 600; }
 
 .mainContainer {
   background-image: url(../images/bg0.jpg);
