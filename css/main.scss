@@ -58,7 +58,7 @@ a{
 	font-style: italic;
 	color: $lightblue;
 	font-size: 1em;
-	text-align: left;
+	text-align: center;
 	margin: 3px 0 0 0;
 	padding: 0;
 }
@@ -70,7 +70,7 @@ a{
 	font-style: italic;
 	color: $lightblue;
 	font-size: 1em;
-	text-align: right;
+	text-align: center;
 	margin: 0;
 	padding: 0;
 }
@@ -80,18 +80,11 @@ a{
 	font-weight: 600;
 }
 
-.mainContainer{
-  background-image: url(../images/bg0.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-}
-
 ul{
   height: 40px;
   background-color: $deepblue;
   position: absolute;
-  top: 20px;
+  top: 70px;
   left: 55px;
   overflow: hidden;
   padding-left: 7px;
@@ -128,7 +121,7 @@ ul{
   height: 40px;
   position: fixed;
   padding: 7.5px;
-  top: 20px;
+  top: 70px;
   left: 20px;
   z-index: 10;
   background-color: $blue;
@@ -139,7 +132,29 @@ ul{
 }
 
 /* Medium and up */
-@media screen and (min-width: 48em) {}
+@media screen and (min-width: 48em) {
+	
+	ul
+	{
+		top: 50px;
+	}
+	
+	#hamburgerIcon
+	{
+		top: 50px;
+	}
+	
+	#topSectionRow h2
+	{
+		text-align: left;
+	}
+	
+	#topSectionRow p
+	{
+		text-align: right;
+	}
+	
+}
 
 /* Medium only */
 @media screen and (min-width: 48em) and (max-width: 62em) {}

@@ -8166,7 +8166,7 @@ a {
   font-style: italic;
   color: #47C2C6;
   font-size: 1em;
-  text-align: left;
+  text-align: center;
   margin: 3px 0 0 0;
   padding: 0; }
 
@@ -8176,24 +8176,18 @@ a {
   font-style: italic;
   color: #47C2C6;
   font-size: 1em;
-  text-align: right;
+  text-align: center;
   margin: 0;
   padding: 0; }
 
 #topSectionRow span {
   font-weight: 600; }
 
-.mainContainer {
-  background-image: url(../images/bg0.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100%; }
-
 ul {
   height: 40px;
   background-color: #0a3f59;
   position: absolute;
-  top: 20px;
+  top: 70px;
   left: 55px;
   overflow: hidden;
   padding-left: 7px;
@@ -8226,7 +8220,7 @@ ul {
   height: 40px;
   position: fixed;
   padding: 7.5px;
-  top: 20px;
+  top: 70px;
   left: 20px;
   z-index: 10;
   background-color: #135780;
@@ -8235,6 +8229,18 @@ ul {
     cursor: pointer; }
 
 /* Medium and up */
+@media screen and (min-width: 48em) {
+  ul {
+    top: 50px; }
+
+  #hamburgerIcon {
+    top: 50px; }
+
+  #topSectionRow h2 {
+    text-align: left; }
+
+  #topSectionRow p {
+    text-align: right; } }
 /* Medium only */
 /* Large and up */
 /* Large only */
