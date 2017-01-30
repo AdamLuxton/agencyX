@@ -1,0 +1,25 @@
+$red: #ff6969;
+$darkgrey: #1c1b1b;
+$blue: rgb(91, 222, 167);
+$lightblue:#bce7f4;
+
+
+body, html{
+  height: 100%;
+}
+
+body{
+  //padding-top: 70px;
+  background: $darkgrey;
+}
+
+.hidden{
+  display: none;
+}
+
+.mainContainer{
+  background-image: url(../images/bg0.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
