@@ -1,0 +1,16 @@
+body, html {
+  height: 100%; }
+
+body {
+  background: #1c1b1b; }
+
+.hidden {
+  display: none; }
+
+.mainContainer {
+  background-image: url(../images/bg0.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%; }
+
+/*# sourceMappingURL=main.css.map */
