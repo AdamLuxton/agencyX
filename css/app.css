@@ -8139,6 +8139,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+a {
+  color: #47C2C6;
+  transition: color 1s; }
+  a:link, a:visited {
+    color: #47C2C6;
+    text-decoration: none; }
+  a:hover {
+    color: #ee2676;
+    text-decoration: none; }
+  a:active {
+    color: #47C2C6;
+    text-decoration: none; }
+
 .hidden {
   display: none; }
 
@@ -8176,6 +8189,32 @@ body {
   background-size: cover;
   height: 100%; }
 
+ul {
+  height: 40px;
+  background-color: #0a3f59;
+  position: absolute;
+  top: 20px;
+  left: 55px;
+  overflow: hidden;
+  padding-left: 7px;
+  padding-right: 5px;
+  border-radius: 3px;
+  transform-origin: "left center";
+  transform: scaleX(0); }
+  ul li {
+    float: left;
+    list-style: none;
+    padding-top: 10px;
+    margin: 0 10px 0 10px;
+    opacity: 0;
+    font-family: "Exo";
+    font-weight: 600;
+    font-style: italic; }
+
+.current {
+  color: #ee2676 !important;
+  transition: color 1s; }
+
 #logoIcon {
   position: absolute;
   top: 46%;
@@ -8194,5 +8233,11 @@ body {
   border-radius: 3px; }
   #hamburgerIcon:hover {
     cursor: pointer; }
+
+/* Medium and up */
+/* Medium only */
+/* Large and up */
+/* Large only */
+/* X-Large and up */
 
 /*# sourceMappingURL=app.css.map */
