@@ -1,7 +1,7 @@
 $red: #ff6969;
 $darkgrey: #1c1b1b;
-$blue: rgb(91, 222, 167);
-$lightblue:#bce7f4;
+$blue: #135780;
+$lightblue:#47C2C6;
 
 
 body, html{
@@ -39,7 +39,7 @@ body{
   top: 20px;
   left: 20px;
   z-index: 10;
-  background-color: #135780;
+  background-color: $blue;
   border-radius: 3px;
   &:hover{
     cursor: pointer;
