@@ -13,4 +13,23 @@ body {
   background-size: cover;
   height: 100%; }
 
+#logoIcon {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; }
+
+#hamburgerIcon {
+  height: 40px;
+  position: fixed;
+  padding: 7.5px;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  background-color: #135780;
+  border-radius: 3px; }
+  #hamburgerIcon:hover {
+    cursor: pointer; }
+
 /*# sourceMappingURL=main.css.map */
