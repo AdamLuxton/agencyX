@@ -11,6 +11,8 @@ var logoSVG,
     pageTitle = document.querySelector("title"),
     homeText = document.querySelector("#homeTextBottom"),
     sideText = document.querySelector("#sideText"),
+    aboutDiv = document.querySelector("#bottomAbout"),
+    teamDiv = document.querySelector("#bottomTeam"),
     on = false,
     dynamicContent = {
   		home: {
@@ -113,20 +115,28 @@ function changeTo(page){
     on=true;
     TweenMax.to(homeText, 0.5, {opacity:1, ease:Power1.easeOut});
     changeLogo();
+    aboutDiv.classList.add("hidden");
+    teamDiv.classList.add("hidden");
   }
   else if (page==="about"){
     on=false;
     TweenMax.to(homeText, 0.5, {opacity:0, ease:Power1.easeOut});
     changeLogo();
+    aboutDiv.classList.remove("hidden");
+    teamDiv.classList.add("hidden");
   }
   else{
     on=false;
     TweenMax.to(homeText, 0.5, {opacity:0, ease:Power1.easeOut});
     changeLogo();
+    aboutDiv.classList.add("hidden");
+    teamDiv.classList.remove("hidden");
   }
   title.innerHTML = dynamicContent[page].title;
   sideText.innerHTML = dynamicContent[page].text;
   TweenMax.from(sideText, 1, {opacity:0, ease:Power1.easeOut});
+  TweenMax.from(aboutDiv, 1, {opacity:0, ease:Power1.easeOut});
+  TweenMax.from(teamDiv, 1, {opacity:0, ease:Power1.easeOut});
   body.style.backgroundImage = "url(images/"+dynamicContent[page].bgImg+")";
   pageTitle.innerHTML = dynamicContent[page].title;
 }
