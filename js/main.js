@@ -6,6 +6,7 @@ var logoSVG;
 var clicked = false;
 var navLinks = document.querySelectorAll("nav ul li");
 var linkContainer = document.querySelector("nav ul");
+var on = false;
 
 //functions
 function loadSVG(e){
@@ -57,7 +58,19 @@ function hamburgerClick(){
 
 }
 
+function changeLogo(){
+  console.log("running");
+  if (on===false){
+      document.querySelector("#logoIcon").classList.add("corner");
+      on = true;
+  }
+  else{
+      document.querySelector("#logoIcon").classList.remove("corner");
+      on = false;
+  }
+}
+
 //listeners
 document.querySelector("#logoIcon").addEventListener('load', loadSVG, false);
-
+document.querySelector("#changeLogo").addEventListener('click', changeLogo, false);
 })();
