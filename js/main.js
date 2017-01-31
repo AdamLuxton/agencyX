@@ -22,13 +22,13 @@ var logoSVG,
   		about : {
         title: "About Us",
         bgImg: "about_background.jpg",
-        text: "Just a couple of Fair Dinkum dudes riding the waves! We love a good Grommet and teach daily lessons to those willing to listen.<br> When you leave we want you to ring your pals and tell em’ Ollie’s Outback Surf Shack is Ripper!"
+        text: "Just a couple of Fair Dinkum dudes riding the waves! We love a good Grommet and teach daily lessons to those willing to listen.<br><br> When you leave we want you to ring your pals and tell em’ Ollie’s Outback Surf Shack is Ripper!"
       },
 
   		team : {
         title: "The Team",
         bgImg: "team_background.jpg",
-        text: "Arvo! She’ll be right, grab a slab and tour down to Bondi Beach for some afternoon Barbie and high tide!<br> We’re a two man oporation located right on the beach."
+        text: "Arvo! She’ll be right, grab a slab and tour down to Bondi Beach for some afternoon Barbie and high tide!<br><br> We’re a two man oporation located right on the beach."
   		}
 	   };
 
