@@ -8131,7 +8131,8 @@ button.close {
   clip: auto; }
 
 body, html {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 body {
   background-color: #135780;
@@ -8186,7 +8187,8 @@ a {
 
 #homeTextBottom {
   position: absolute;
-  top: 80%; }
+  top: 80%;
+  width: 100%; }
 
 #homeTextBottom h1 {
   font-family: 'Exo', Arial, Times, Serif;
