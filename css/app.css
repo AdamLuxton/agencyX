@@ -8184,6 +8184,21 @@ a {
 #topSectionRow span {
   font-weight: 600; }
 
+#homeTextBottom {
+  position: absolute;
+  top: 80%; }
+
+#homeTextBottom h1 {
+  font-family: 'Exo', Arial, Times, Serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #135780;
+  font-size: 1.5em;
+  text-align: center; }
+
+#homeTextBottom span {
+  color: #ee2676; }
+
 ul {
   height: 40px;
   background-color: #0a3f59;
