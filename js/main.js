@@ -2,11 +2,34 @@
 //"use strict"
 
 //variables
-var logoSVG;
-var clicked = false;
-var navLinks = document.querySelectorAll("nav ul li");
-var linkContainer = document.querySelector("nav ul");
-var on = false;
+var logoSVG,
+    clicked = false,
+    navLinks = document.querySelectorAll("nav ul li a"),
+    linkContainer = document.querySelector("nav ul"),
+    body = document.querySelector("body"),
+    title = document.querySelector("#title"),
+    pageTitle = document.querySelector("title"),
+    homeText = document.querySelector("#homeTextBottom"),
+    on = false,
+    dynamicContent = {
+  		home: {
+        title: "Ollie's Outback Surf Shack",
+        bgImg: "home_background.jpg",
+        text: "Arvo! She’ll be right, grab a slab and tour down to Bondi Beach for some afternoon Barbie and high tide!<br> We’re a two man oporation located right on the beach."
+  		},
+
+  		about : {
+        title: "About Us",
+        bgImg: "about_background.jpg",
+        text: "Just a couple of Fair Dinkum dudes riding the waves! We love a good Grommet and teach daily lessons to those willing to listen.<br> When you leave we want you to ring your pals and tell em’ Ollie’s Outback Surf Shack is Ripper!"
+      },
+
+  		team : {
+        title: "The Team",
+        bgImg: "team_background.jpg",
+        text: "Just a couple of Fair Dinkum dudes riding the waves! We love a good Grommet and teach daily lessons to those willing to listen.<br> When you leave we want you to ring your pals and tell em’ Ollie’s Outback Surf Shack is Ripper!"
+  		}
+	   };
 
 //functions
 function loadSVG(e){
@@ -59,7 +82,7 @@ function hamburgerClick(){
 }
 
 function changeLogo(){
-  console.log("running");
+  //console.log("running");
   if (on===false){
       document.querySelector("#logoIcon").classList.add("corner");
       on = true;
@@ -70,7 +93,44 @@ function changeLogo(){
   }
 }
 
+function cycleContent(e){
+  e.preventDefault();
+  var page = e.currentTarget.id;
+  e.currentTarget.classList.add("current");
+  [].forEach.call(navLinks, function(link){
+    if (link.id!=page){
+      link.classList.remove("current");
+    }
+  });
+  //console.log(page);
+  changeTo(page);
+}
+
+function changeTo(page){
+  if (page==="home") {
+    on=true;
+    TweenMax.to(homeText, 0.5, {opacity:1, ease:Power1.easeOut});
+    changeLogo();
+  }
+  else if (page==="about"){
+    on=false;
+    TweenMax.to(homeText, 0.5, {opacity:0, ease:Power1.easeOut});
+    changeLogo();
+  }
+  else{
+    on=false;
+    TweenMax.to(homeText, 0.5, {opacity:0, ease:Power1.easeOut});
+    changeLogo();
+  }
+  title.innerHTML = dynamicContent[page].title;
+  body.style.backgroundImage = "url(images/"+dynamicContent[page].bgImg+")";
+  pageTitle.innerHTML = dynamicContent[page].title;
+}
+
 //listeners
 document.querySelector("#logoIcon").addEventListener('load', loadSVG, false);
-document.querySelector("#changeLogo").addEventListener('click', changeLogo, false);
+//document.querySelector("#changeLogo").addEventListener('click', changeLogo, false);
+[].forEach.call(navLinks, function(link){
+  link.addEventListener('click', cycleContent, false);
+});
 })();
