@@ -104,6 +104,17 @@ a{
 	color: $pink;
 }
 
+#descSide
+{
+	font-family: 'Exo', Arial, Times, Serif;
+	font-weight: 400;
+	font-style: italic;
+	color: $lightblue;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 220px;
+}
+
 ul{
   height: 40px;
   background-color: $deepblue;
@@ -184,16 +195,22 @@ ul{
 	{
 		text-align: right;
 	}
+	
+	#descSide
+	{
+		text-align: left;
+		margin-top: 80px;
+	}
 
-  #logoIcon{
-    width: 400px;
-  }
+    #logoIcon{
+        width: 400px;
+    }
 
-  .corner{
-    top: 130px !important;
-    right: 100px !important;
-    width: 200px !important;
-  }
+    .corner{
+	    top: 130px !important;
+	    right: 100px !important;
+	    width: 200px !important;
+    }
 
 }
 

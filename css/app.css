@@ -8201,6 +8201,15 @@ a {
 #homeTextBottom span {
   color: #ee2676; }
 
+#descSide {
+  font-family: 'Exo', Arial, Times, Serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #47C2C6;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 220px; }
+
 ul {
   height: 40px;
   background-color: #0a3f59;
@@ -8265,6 +8274,10 @@ ul {
 
   #topSectionRow p {
     text-align: right; }
+
+  #descSide {
+    text-align: left;
+    margin-top: 80px; }
 
   #logoIcon {
     width: 400px; }
