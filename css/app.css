@@ -8195,7 +8195,7 @@ a {
   font-weight: 400;
   font-style: italic;
   color: #135780;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center; }
 
 #homeTextBottom span {
@@ -8219,10 +8219,11 @@ ul {
     list-style: none;
     padding-top: 10px;
     margin: 0 10px 0 10px;
-    opacity: 0;
     font-family: "Exo";
     font-weight: 600;
     font-style: italic; }
+    ul li a {
+      opacity: 0; }
 
 .current {
   color: #ee2676 !important;
