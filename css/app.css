@@ -8137,7 +8137,8 @@ body {
   background-color: #135780;
   background-image: url(../images/home_background.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 a {
   color: #47C2C6;
@@ -8209,7 +8210,8 @@ ul {
   padding-right: 5px;
   border-radius: 3px;
   transform-origin: "left center";
-  transform: scaleX(0); }
+  transform: scaleX(0);
+  z-index: 8; }
   ul li {
     float: left;
     list-style: none;
@@ -8227,9 +8229,14 @@ ul {
 #logoIcon {
   position: absolute;
   top: 46%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px; }
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 300px;
+  transition: top 1s, right 1s, width 1s; }
+
+.corner {
+  top: 150px !important;
+  width: 200px !important; }
 
 #hamburgerIcon {
   height: 40px;
@@ -8255,7 +8262,15 @@ ul {
     text-align: left; }
 
   #topSectionRow p {
-    text-align: right; } }
+    text-align: right; }
+
+  #logoIcon {
+    width: 400px; }
+
+  .corner {
+    top: 130px !important;
+    right: 100px !important;
+    width: 200px !important; } }
 /* Medium only */
 /* Large and up */
 /* Large only */
