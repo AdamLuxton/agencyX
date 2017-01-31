@@ -8,11 +8,12 @@ var logoSVG,
     linkContainer = document.querySelector("nav ul"),
     body = document.querySelector("body"),
     title = document.querySelector("#title"),
+    pageTitle = document.querySelector("title"),
     homeText = document.querySelector("#homeTextBottom"),
     on = false,
     dynamicContent = {
   		home: {
-        title: "Welcome",
+        title: "Ollie's Outback Surf Shack",
         bgImg: "home_background.jpg",
         text: "Arvo! She’ll be right, grab a slab and tour down to Bondi Beach for some afternoon Barbie and high tide!<br> We’re a two man oporation located right on the beach."
   		},
@@ -123,6 +124,7 @@ function changeTo(page){
   }
   title.innerHTML = dynamicContent[page].title;
   body.style.backgroundImage = "url(images/"+dynamicContent[page].bgImg+")";
+  pageTitle.innerHTML = dynamicContent[page].title;
 }
 
 //listeners
